@@ -1,16 +1,13 @@
-import urllib2
+import sys
+import urllib
+import webbrowser
 
-#termino = droid.dialogGetInput('Buscar', 'Ingrese palabra').result
+def busca_rae(termino):
+    searchUrl = 'http://lema.rae.es/drae/srv/search?val=' \
+		    + urllib.quote_plus(termino)
+    webbrowser.open_new_tab(searchUrl)
 
-if termino is not None and len(termino) > 0:
-    searchUrl = 'http://lema.rae.es/drae/srv/search?val=' + termino
-    response = urllib2.urlopen(searchUrl)
-    html = response.read()
-    raeFileName = './raewin.html'
-    fhtml = open(raeFileName, w)
-    fhtml.write(html)
-    fhtml.close()
-#	droid.webViewShow(searchUrl)
+ter = sys.argv[1]
 
-else:
-#	droid.makeToast('Cancelado')
+if ter is not None and len(ter) > 0:
+    busca_rae(ter) 

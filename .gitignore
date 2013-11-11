@@ -2,6 +2,7 @@
 
 # vim editing files
 *.*~
+*.swp
 
 # OS generated files #
 ######################
