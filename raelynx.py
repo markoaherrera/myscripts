@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """ 
 Muestra resultado de busqueda en lynx
 """
