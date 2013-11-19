@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """ 
-Muestra resultado de busqueda en lynx
+Muestra resultado de busqueda en lynx. Gracias
 """
 import sys
 import webbrowser as wb
