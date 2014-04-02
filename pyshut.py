@@ -7,4 +7,5 @@ while (t < 10):
 	time.sleep(60)
 	t = t + 1
 
-print "Fin de ejecucion"
+#os.popen("sudo poweroff", "w").write("password")
+print "Ejecucion poweroff"
